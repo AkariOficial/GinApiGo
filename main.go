@@ -1,10 +1,14 @@
 package main
 
 import (
-    "github.com/gin-gonic/gin"
+	"github.com/AkariOficial/GinApiGo/ola"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
+
+    ola.Ola()
+
     r := gin.Default()
     r.GET("/ping", func(ctx *gin.Context) {
         ctx.JSON(200, gin.H{
